@@ -1,5 +1,5 @@
     // 创建 XMLHttpRequest 请求读取 XML 文件
-function internalFunc(){}
+function internalFunc(){
     const xhr = new XMLHttpRequest();
     xhr.open('GET', 'body.xml', true);
     xhr.onreadystatechange = function() {
@@ -16,3 +16,4 @@ function internalFunc(){}
     // 发送请求
     xhr.send();
 }
+internalFunc()
