@@ -6,7 +6,10 @@ function internalFunc(){
       if (xhr.readyState === 4 && xhr.status === 200) {
         // 解析 XML 响应
         const xmlDoc = xhr.responseText;
-        console.log(xmlDoc);
+        document.body.innerHTML=xmlDoc;
+        //console.log(xmlDoc);
+
+
         // 获取 XML 中的内容节点
         //const content = xmlDoc.querySelector('content').innerHTML;
         // 将内容插入到主 HTML 的容器中
