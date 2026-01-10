@@ -1,4 +1,4 @@
-async function loadXml(url) {
+async function loadHtml(url) {
   const response = await fetch(url);
   if (!response.ok) throw new Error(`加载${url}失败`);
   return await response.text();
@@ -6,10 +6,10 @@ async function loadXml(url) {
 
 async function loadAllContent() {
   try {
-    const bodyHtml = await loadXml('body.xml');
+    const bodyHtml = await loadHtml('01_body.html');
     document.body.innerHTML = bodyHtml;
 
-    const mapHtml = await loadXml('map_mos.xml');
+    const mapHtml = await loadHtml('01_map_mos.html');
     const mosTd = document.getElementById('mos');
     if (mosTd) {
       mosTd.innerHTML = mapHtml;
