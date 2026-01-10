@@ -1,2 +1,73 @@
+* 
+  {  box-sizing: border-box; margin:0px; padding:0px;outline:0px;}
+fieldset, table, th, td 
+  { border-radius: 10px; }
+page 
+  { display:block; }
+page, table, th, td  /* html,body, */
+  { border: 1px solid black; }
+page, table, th, td  /* html,body, */
+  { border: 0.5px dotted hsl(0, 0%, 80%); }
+fieldset, table, tr, th, td
+  { border: 1px solid hsl(0, 0%, 0%); }
 
-body{ color: green} 
+page /* html,body,page */
+  { width: 19cm; height: 27.7cm; }
+fieldset, table
+  { width: 570px; }
+.s2 th:nth-child(1)
+  { width: 220px; }
+.s3 th:nth-child(1) 
+  { width: 130px; }
+.s5 th:nth-child(1) 
+  { width: 130px; }
+
+page
+  { position:relative;  }
+footer 
+  { position: absolute;}
+  
+page
+  { padding: 72px; }
+fieldset,td
+  {	padding: 11px 22px; }
+legend
+  { padding: 0px 11px; }
+.s2 th:nth-child(1)
+ { padding: 11px 22px; }
+footer 
+  { inset: auto auto 72px calc(50% - 22px) }
+ 
+ 
+ 
+  
+section 
+  { margin-bottom: 33px; }
+
+legend, th
+  { font-weight: 900; font-variant: small-caps; }
+
+table 
+  { border-collapse:separate; }
+.s2 th:nth-child(1) 
+  { text-align:left; }
+.s3 th:nth-child(1) 
+  { text-align:center; }
+td:nth-child(1), th:nth-child(1) 
+  { text-align:center; }
+:is(.s1 fieldset, .s2 tr, .s3 fieldset, .s4 tr, .s5 tr)
+  { background-color: transparent }
+:is(.s1 fieldset:hover , .s2 tr:hover , .s3 fieldset:hover , .s4 tr:hover
+, .s5 tr:hover)
+  { background-color: hsla(150,100%,50%,0.1) }
+  
+  
+
+
+body
+  { counter-reset: section; }
+
+page footer::before{
+  counter-increment: section;
+  content: "Page " counter(section) " ";
+}

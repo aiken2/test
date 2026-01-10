@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Website</title>
-  <!-- Link to your CSS file -->
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js"></script>
-</head>
-<body>
-
-  
 <section class="f1 s1">
 <fieldset>
 <legend>Goal</legend>
@@ -61,15 +48,15 @@ To secure an opportunity where I can fully leverage my skills, expertise, and po
 <legend style="padding:5px">Work Exp.</legend>
 <table>
 <tr><th>Period</th><th>Company and Title</th><th>Highest Monthly Salary</th></tr>
-<tr><td>24 - 26</td><td>Blue Sky<br> Dot Net Programmer       </td><td> 17K, Resigned   </td></tr>      
-<tr><td>23 - 24</td><td>ERB VR Course<br> (2 Month)           </td><td> 5K, Passed      </td></tr>      
-<tr><td>23 - 24</td><td>Cymballe.. <br>Senior Programmar      </td><td>20K, Resigned    </td></tr>      
-<tr><td>19 - 23</td><td>SoftwareForce.. <br>Anaylst Programmar</td><td>23K, Resigned    </td></tr>         
-<tr><td>13 - 19</td><td>Minwork.. <br>Software Developer      </td><td>20K, Resigned    </td></tr>   
-<tr><td>12 - 13</td><td>Mtouche.. <br>IT Executive            </td><td>12K, Resigned    </td></tr>   
-<tr><td>12 - 12</td><td>Wealthbase.. <br>Web Developer        </td><td>12K, Resigned    </td></tr>   
-<tr><td>10 - 12</td><td>UGC.. <br>Programmar                  </td><td>10K, Contract End</td></tr>   
-<tr><td>09 - 10</td><td>Techconic<br>Assistant Programmer     </td><td>6K, Resigned     </td></tr>   
+<tr><td>24 - 26</td><td>Blue Sky<br> Dot Net Programmer (7hrs)</td><td> 17K, Resigned    </td></tr>      
+<tr><td>23 - 24</td><td>ERB VR Course<br> (2 Month)           </td><td> 5K, Passed       </td></tr>      
+<tr><td>23 - 24</td><td>Cymballe.. <br>Senior Programmar      </td><td> 20K, Resigned    </td></tr>      
+<tr><td>19 - 23</td><td>SoftwareForce.. <br>Anaylst Programmar</td><td> 23K, Resigned    </td></tr>         
+<tr><td>13 - 19</td><td>Minwork.. <br>Software Developer      </td><td> 20K, Resigned    </td></tr>   
+<tr><td>12 - 13</td><td>Mtouche.. <br>IT Executive            </td><td> 12K, Resigned    </td></tr>   
+<tr><td>12 - 12</td><td>Wealthbase.. <br>Web Developer        </td><td> 12K, Resigned    </td></tr>   
+<tr><td>10 - 12</td><td>UGC.. <br>Programmar                  </td><td> 10K, Contract End</td></tr>   
+<tr><td>09 - 10</td><td>Techconic<br>Assistant Programmer     </td><td> 6K, Resigned     </td></tr>   
 </table>
 </fieldset>
 </section>
@@ -78,8 +65,3 @@ To secure an opportunity where I can fully leverage my skills, expertise, and po
 <footer></footer>
 </page>
 
-
-
-
-</body>
-</html>
