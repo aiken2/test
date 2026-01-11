@@ -71,9 +71,87 @@ page footer::before{
   content: "Page " counter(section) " ";
 }
 
-#mos iframe{
-width: 200px;       
-height: 200px;      
-border-radius: 50%; 
-overflow: hidden;   
+
+.circle-container {
+display: inline-block;
+position: relative;
+z-index: 2;
+
+animation: growCircle 2s ease-out forwards;
+}
+
+.map-badge {
+  position: relative;
+  width: 200px;       
+  height: 200px;      
+  border-radius: 50%; 
+  overflow: hidden; /* Ensures iframe is clipped to circle */
+}
+
+.map-badge iframe {
+  width: 200px;       
+  height: 200px;      
+  border-radius: 50%; 
+  display: block;
+}
+
+/* Flash overlay: sits above map, below text */
+.flash-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;       
+  height: 200px;      
+  border-radius: 50%;
+  background-color: #ffffff; /* Your flash color */
+  opacity: 0;
+  pointer-events: none; /* So it doesn’t block interaction */
+  animation: flash 4s 1;
+  z-index: 1;
+}
+
+/* Text label on top */
+.map-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333; /* Default text */
+  z-index: 2;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* But easier: animate text color together via same keyframes */
+@keyframes flash {
+50%, 65%, 85% {
+opacity: 1;
+}
+100% {
+opacity: 0;
+}
+}
+
+/* Optional: also animate text color if needed */
+.map-label {
+animation: flashText 5s 1;
+}
+
+@keyframes flashText {
+40%, 55%, 70% {
+color: green;
+}
+100% {
+color: #000;
+}
+}
+
+@keyframes growCircle {
+0% 
+{ transform: scale(0);} 
+100% 
+{ transform: scale(1); }
 }

@@ -6,10 +6,10 @@ async function loadHtml(url) {
 
 async function loadAllContent() {
   try {
-    const bodyHtml = await loadHtml('01_body.html');
+    const bodyHtml = await loadHtml('static/01_body.html');
     document.body.innerHTML = bodyHtml;
 
-    const mapHtml = await loadHtml('01_map_mos.html');
+    const mapHtml = await loadHtml('static/01_map_mos.html');
     const mosTd = document.getElementById('mos');
     if (mosTd) {
       mosTd.innerHTML = mapHtml;
