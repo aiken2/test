@@ -13,7 +13,10 @@ async function loadAllContent() {
     const mosTd = document.getElementById('mos');
     if (mosTd) {
       mosTd.innerHTML = mapHtml;
-      if (mosTd.querySelector('#map_mos')) initMap('map_mos'); // 假设initMap接收地图容器ID
+      //if (mosTd.querySelector('#map_mos')) initMap('map_mos'); // 假设initMap接收地图容器ID
+
+
+      await _start();
     } else {
       console.warn('未找到id="mos"的td元素');
     }

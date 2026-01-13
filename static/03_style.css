@@ -103,7 +103,7 @@ animation: growCircle 2s ease-out forwards;
   width: 200px;       
   height: 200px;      
   border-radius: 50%;
-  background-color: #ffffff; /* Your flash color */
+  background-color: #000; /* Your flash color */
   opacity: 0;
   pointer-events: none; /* So it doesn’t block interaction */
   animation: flash 4s 1;
@@ -142,7 +142,7 @@ animation: flashText 5s 1;
 
 @keyframes flashText {
 40%, 55%, 70% {
-color: green;
+color: #9966ff;
 }
 100% {
 color: #000;
@@ -154,4 +154,28 @@ color: #000;
 { transform: scale(0);} 
 100% 
 { transform: scale(1); }
+}
+
+
+
+.circle-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.circle-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('lightning.webp');
+  background-size: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scale(1.05);
 }
