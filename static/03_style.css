@@ -1,11 +1,21 @@
 * 
   {  box-sizing: border-box; margin:0px; padding:0px;outline:0px;}
+
+body { background-color:#060 }
+page { background-color:#fff }
+:is(.s1 fieldset, .s2 tr, .s3 fieldset, .s4 tr, .s5 tr)
+  { background-color: transparent }
+:is(.s1 fieldset:hover , .s2 tr:hover , .s3 fieldset:hover , .s4 tr:hover
+, .s5 tr:hover)
+  { background-color: hsla(150,100%,50%,0.1) }
+.flash-overlay 
+  { background-color: #000;  }
+
+
 fieldset, table, th, td 
   { border-radius: 10px; }
 page 
   { display:block; }
-page, table, th, td  /* html,body, */
-  { border: 1px solid black; }
 page, table, th, td  /* html,body, */
   { border: 0.5px dotted hsl(0, 0%, 80%); }
 fieldset, table, tr, th, td
@@ -56,12 +66,7 @@ table
   { text-align:center; }
 td:nth-child(1), th:nth-child(1) 
   { text-align:center; }
-:is(.s1 fieldset, .s2 tr, .s3 fieldset, .s4 tr, .s5 tr)
-  { background-color: transparent }
-:is(.s1 fieldset:hover , .s2 tr:hover , .s3 fieldset:hover , .s4 tr:hover
-, .s5 tr:hover)
-  { background-color: hsla(150,100%,50%,0.1) }
-  
+
 
 body
   { counter-reset: section; }
@@ -103,7 +108,6 @@ animation: growCircle 2s ease-out forwards;
   width: 200px;       
   height: 200px;      
   border-radius: 50%;
-  background-color: #000; /* Your flash color */
   opacity: 0;
   pointer-events: none; /* So it doesn’t block interaction */
   animation: flash 4s 1;
