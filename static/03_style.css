@@ -1,5 +1,28 @@
-* 
-  {  box-sizing: border-box; margin:0px; padding:0px;outline:0px;}
+* {  box-sizing: border-box;  outline:0px;}
+
+*             { margin:0px;}
+section       { margin-bottom: 33px; }
+section.s4    { margin-bottom: 15px; }
+.circle-image { margin: 0 auto; }
+
+.circle-label { text-align: center;}
+
+/* Highlight when label is focused (via click or keyboard) */
+.circle-label:focus + .circle-image,
+.circle-label:hover + .circle-image {
+  box-shadow: 0 0 0 4px rgba(0, 100, 255, 0.6);
+}
+
+
+
+
+*                    { padding:0px;}
+page                 { padding: 72px; }
+fieldset,td          { padding: 11px 22px; }
+section.s4 td        { padding: 2px 22px; }
+legend               { padding: 0px 11px; }
+.s2 th:nth-child(1)  { padding: 11px 22px; }
+
 
 body { background-color:#060 }
 page { background-color:#fff }
@@ -11,8 +34,7 @@ page { background-color:#fff }
 .flash-overlay 
   { background-color: #000;  }
 
-
-fieldset, table, th, td 
+ fieldset, table, th, td 
   { border-radius: 10px; }
 page 
   { display:block; }
@@ -37,23 +59,9 @@ page
 footer 
   { position: absolute;}
   
-page
-  { padding: 72px; }
-fieldset,td
-  {	padding: 11px 22px; }
-section.s4 td
-  {	padding: 2px 22px; }
-legend
-  { padding: 0px 11px; }
-.s2 th:nth-child(1)
- { padding: 11px 22px; }
 footer 
   { inset: auto auto 72px calc(50% - 22px) }
    
-section 
-  { margin-bottom: 33px; }
-section.s4
-  { margin-bottom: 15px; }
 
 legend, th
   { font-weight: 900; font-variant: small-caps; }
