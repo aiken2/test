@@ -15,6 +15,7 @@ section.s4    { margin-bottom: 15px; }
   /* Optional: style the text */
   color: white;
   font-weight: bold;
+  z-index:-1;
 }
 
 
